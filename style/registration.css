@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700;800;900&family=Orbitron:wght@500;900&family=Oswald:wght@200;300;500;600&family=Shantell+Sans:ital,wght@0,500;1,600&family=Signika:wght@300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.registration-container{
+    border: 1px solid black;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    border-radius: 20px;
+}
+.registration-bg{
+    background-color: #00A7E1;
+    border-radius: 20px 0 0 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration-bg h1{
+    font-size: 70px;
+    width: 60%;
+    line-height: 90px;
+    color: white;
+}
+.registration-bg ul{
+    font-size: 25px;
+    list-style: none;
+    line-height: 50px;
+    color: white;
+    padding-right: 35%;
+}
+.registration-input-section{
+    width: 50%;
+    background-color: #D9E5D6;
+    border-radius: 0 20px 20px 0;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    padding-top: 5%;
+}
+.top-section p{
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 5%;
+}
+.top-section button{
+    width: 25%;
+    height: 40%;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    background-color: #00A7E1;
+    color: white;
+    margin-right: 13%;
+    cursor: pointer;
+}
+.registration-input-section > h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 0;
+}
+.registration-input-section input{
+    width: 85%;
+    height: 7%;
+    margin-left: 2%;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: small;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-left: 2%;
+}
+.register-name{
+    display: flex;
+    height: 5%;
+    margin-bottom: 7%;
+
+}
+.register-name input{
+    width: 40%;
+    height: 140%
+}
+.button-section{
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-section button{
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #00A7E1;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
