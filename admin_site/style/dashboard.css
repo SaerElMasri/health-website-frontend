@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700;800;900&family=Orbitron:wght@500;900&family=Oswald:wght@200;300;500;600&family=Shantell+Sans:ital,wght@0,500;1,600&family=Signika:wght@300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika';
+}
+header{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    font-size: 40px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #00A7E1;
+    color: white;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+.list-hospitals{
+    background-color: #00A7E1;
+    width: 20%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-hospitals h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 5%;
+    letter-spacing: 3px;
+    color: white;
+}
+.list-hospitals hr{
+    width: 80%;
+    margin-right: 14%;
+    
+}
+.hospital-component{
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 2%;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.hospital-component h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+}
+.hospital-component p{
+    margin: 0;
+}
+.add-hospital{
+    border: 1px solid black;
+    width: 80%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-hospital h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.add-hospital input{
+    width: 80%;
+    height: 8%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding-left: 2%;
+    font-size: large;
+}
+.add-hospital button{
+    width: 20%;
+    height: 5%;
+}
