@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700;800;900&family=Orbitron:wght@500;900&family=Oswald:wght@200;300;500;600&family=Shantell+Sans:ital,wght@0,500;1,600&family=Signika:wght@300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika';
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    font-size: 40px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #00A7E1;
+    color: white;
+}
+hr{
+    width: 90%;
+}
+.header-welcome{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #EDDEA4;
+    padding-top: 5%;
+}
+.header-text-section{
+    width: 40%;
+    height: 50vh;
+    padding: 2%;
+}
+.header-text-section h1{
+    font-size: 60px;
+}
+.header-text-section p {
+    font-size: 20px;
+    padding: 2%;
+    line-height: 40px;
+}
+.header-text-section button{
+    width: 30%;
+    height: 10%;
+    background-color: #00A7E1;
+    color: white;
+}
+.header-img-section{
+    width: 40%;
+    background-image: url(assets/header.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.transition-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 5%;
+}
+.transition-header h1{
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+}
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.list-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.list-component .icon{
+    width: 30%;
+    height: 100px;
+    background-image: url(assets/doctor-icon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    margin-top: 5%;
+}
+.list-component h1{
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.list-component p{
+    font-size: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    margin-top: 0;
+}
+.header-section2{
+    width: 100%;
+    display: flex;
+    padding-top: 5%;
+    background-color: #EDDEA4;
+}
+.section2-images{
+    width: 40%;
+    height: 70vh;
+    background-image: url(assets/header2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.article-section{
+    width: 100%;
+    padding-top: 5%;
+}
+.article-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.article{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.img-article{
+    width: 100%;
+    height: 500px;
+    background-image: url(assets/article1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+.article h1{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.article p{
+    font-size: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    margin-top: 0;
+}
+.author-flex{
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.author{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.transition-header2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.transition-header2 h1{
+    font-size: 50px;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+}
+.transition-header2 p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
