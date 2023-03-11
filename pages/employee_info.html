@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Info</title>
+    <link rel="stylesheet" href="../style/registration.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-container">
+            <div class="registration-bg">
+                <h1>Health Medical Portal</h1>
+                <ul>
+                    <li>Data Analytics</li>
+                    <li>Online Scheduling</li>
+                    <li>Online Pharmacy</li>
+                    <li>Invoicing</li>
+                </ul>
+            </div>
+            
+            <div class="registration-input-section">
+                <div class="top-section">
+                    <p>Medical Portal</p>
+                    <button type="button" id="log-redirect">Log In</button>
+                </div>
+                
+                <h1>Register Employee</h1>
+                <input type="text" placeholder="Social Security Number" id="ssn">
+                <input type="text" placeholder="Date Joined" id="date">
+                <input type="text" placeholder="Position" id="position">
+                <select id="hospital-select" style="margin-left: 5%; margin-top: 5%; width: 650px; height: 50px; border-radius: 10px; border: none;">
+                    <option>Select Hospital</option>
+                </select>
+                <div class="button-section">
+                    <button type="button" id="register-action">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/employee.js"></script>
+</body>
+</html>

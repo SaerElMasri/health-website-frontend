@@ -38,8 +38,10 @@ document.querySelector('#register-action').onclick = () =>{
                         if(type == 1){
                             //Client
                             window.location.href = `http://localhost/health-website-frontend/pages/patient_info.html?id=${id}`;
-                        }else if(type == 2){
-                            //window.location.href = `http://localhost/health-website-frontend/pages/patient_info.html?id=${id}`;
+                        }
+                        if(type == 3){    
+                            //Employee
+                            window.location.href = `http://localhost/health-website-frontend/pages/employee_info.html?id=${id}`;
                         }
                     })
                 }else{
