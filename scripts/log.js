@@ -33,14 +33,14 @@ document.querySelector('#register-action').onclick = () =>{
             if(isValidEmail(email.value)){
                 if(isValidPassword(password.value)){
                     axios.post("http://localhost/health-website-backend/register.php", data).then((res) => {
-                    console.log(res);
-                    if (res.data.result == "Success") {
-                        alert("Signed up successfully!");
-                    }else{
-                        alert("Email Already taken");
-                    }
-                    }).catch((error) => {
-                        console.log(error);
+                        const type = res.data.user_type;
+                        const id = res.data.user_id;
+                        if(type == 1){
+                            //Client
+                            window.location.href = `http://localhost/health-website-frontend/pages/patient_info.html?id=${id}`;
+                        }else if(type == 2){
+                            //window.location.href = `http://localhost/health-website-frontend/pages/patient_info.html?id=${id}`;
+                        }
                     })
                 }else{
                     alert("Password not valid")
