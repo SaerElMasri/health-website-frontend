@@ -52,3 +52,6 @@ document.querySelector('#register-action').onclick = () =>{
     }
 }
 
+document.querySelector('#log-redirect').onclick = () => {
+    window.location.href = "http://localhost/health-website-frontend/pages/login.html";
+}
