@@ -1,4 +1,12 @@
 //Register User
+const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+const isValidPassword = (password) => {
+    const emailRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return emailRegex.test(password);
+}
 document.querySelector('#register-action').onclick = () =>{
     let id = document.getElementById('user_type')
     let firstName = document.getElementById('first_name')
@@ -22,8 +30,8 @@ document.querySelector('#register-action').onclick = () =>{
         if(password.value !== repeatPassword.value){
             alert("Passwords do not match");
         }else{
-            if(isValidEmail(email)){
-                if(isValidPassword(password)){
+            if(isValidEmail(email.value)){
+                if(isValidPassword(password.value)){
                     axios.post("http://localhost/health-website-backend/register.php", data).then((res) => {
                     console.log(res);
                     if (res.data.result == "Success") {
@@ -41,14 +49,6 @@ document.querySelector('#register-action').onclick = () =>{
                 alert("Email not valid");
             }
         }
-    }
-    const isValidEmail = (email) => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-    const isValidPassword = (password) => {
-        const emailRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-        return emailRegex.test(password);
     }
 }
 
