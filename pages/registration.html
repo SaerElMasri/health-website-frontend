@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration</title>
     <link rel="stylesheet" href="../style/registration.css">
+    <script src="../axios.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,23 +26,23 @@
                     <button type="button">Log In</button>
                 </div>
                 <h1>Register</h1>
-                <input type="text" placeholder="Account Type">
+                <input type="text" placeholder="Account Type" id="user_type">
                 <div class="register-name">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name" id="first_name">
+                    <input type="text" placeholder="Last Name" id="last_name">
                 </div>
-                <input type="text" placeholder="Email Address" class="input-email">
-                <input type="text" placeholder="Date Of Birth" class="input-email">
+                <input type="text" placeholder="Email Address" class="input-email" id="email">
+                <input type="text" placeholder="Date Of Birth" class="input-email" id="dob">
                 <div class="register-name">
-                    <input type="text" placeholder="Password">
-                    <input type="text" placeholder="Confirm Password">
+                    <input type="text" placeholder="Password" id="password">
+                    <input type="text" placeholder="Confirm Password" id="confirm_password">
                 </div>
                 <div class="button-section">
-                    <button type="button">Sign Up</button>
+                    <button type="button" id="register-action">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
-    
+    <script src="../scripts/log.js"></script>
 </body>
 </html>
