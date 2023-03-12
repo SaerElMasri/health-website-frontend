@@ -46,19 +46,35 @@ button{
     padding-top: 5%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
-
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .medication-component{
     border: 1px solid black;
     width: 20%;
-    height: 40%;
+    height: 50%;
     border-radius: 10px;
+    margin-bottom: 2%;
 }
 .medication-img{
     border-bottom: 1px solid black;
     width: 100%;
     height: 70%;
+    display: flex;  
+}
+.medication-img img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.section-price{
+    display: flex;
+    margin-top: 0;
+}
+.section-price input{
+    width: 40%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 8%;
 }
 .medication-info{
     width: 100%;
