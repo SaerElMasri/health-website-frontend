@@ -112,3 +112,28 @@ button{
     width: 20%;
     height: 5%;
 }
+.user-service{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.user-component{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+}
+.user-info{
+    text-align: center;
+}
+#status-action{
+    width: 100px;
+    height: 40px;
+    margin-top: 2%;
+    cursor: pointer;
+}
